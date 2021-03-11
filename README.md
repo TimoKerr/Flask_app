@@ -28,3 +28,14 @@ Makes very simple linear regression model form fixed data, saves model as pkl, r
 
 ## CI
 To have CI with Github actions we have the mail.yml file in .githun/workflows and the Makefil lint line.
+
+## Docker image
+Dockerfile contains docker commands to create image. 
+
+docker build . myimage
+
+docker run -d -p 8000:8000 --network="host" imageName
+
+docker exec -it containerName /bin/bash
+
+
